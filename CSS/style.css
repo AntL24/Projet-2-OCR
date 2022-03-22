@@ -1,5 +1,4 @@
 *{
-    box-sizing: border-box;
     font-family: "raleway", "sans-serif";
     }
     
@@ -17,15 +16,15 @@
         line-height: 5.1;
     }
     
-    nav a {
-        padding: 2rem;
+    nav div a {
+        padding: 48.5px;
         font-weight: 500;
         border-bottom: 3px solid transparent;
         border-top: 3px solid transparent;
         padding-right: 80px;
     }
     
-    #booki-logo{
+    #booki-logo-container{
         margin-right: auto;
         padding: 30px 60px;
     }
@@ -58,6 +57,7 @@
     }
     
     @media (max-width: 768px) {
-        .acti-heberg{
-        }
+        #booki-logo-container{  
+            
+             }
     }
