@@ -40,7 +40,6 @@
     
     @media (max-width: 992px) {
         span{
-            border: 1px red solid;
             justify-content: center; 
         }
         #booki-logo-container{
