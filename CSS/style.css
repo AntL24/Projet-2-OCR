@@ -1,64 +1,63 @@
-
 *{
-box-sizing: border-box;
-font-family: "raleway", "sans-serif";
-}
-
-a{
-    color: inherit;
-    text-decoration: none;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding-top: 0%;
-    line-height: 5.1;
-}
-
-nav a {
-    padding: 2rem;
-    font-weight: 500;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    padding-right: 80px;
-}
-
-#booki-logo{
-    margin-right: auto;
-    padding: 30px 60px;
-}
-
-nav a:hover{
-    border-top-color: #0065fc;
-    color: #0065fc;
-}
-
-.acti-heberg{ 
-    display: flex;
-}
-
-@media (max-width: 992px) {
+    box-sizing: border-box;
+    font-family: "raleway", "sans-serif";
+    }
+    
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+    
     nav{
-        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding-top: 0%;
+        line-height: 5.1;
     }
-    .acti-heberg{
-        flex-basis: 100%;
+    
+    nav a {
+        padding: 2rem;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+        padding-right: 80px;
     }
-    .acti-heberg a{
-        flex-basis: 50%;
-        text-align: center;
-        border-bottom-color: #F2F2F2;}
-        
-    .acti-heberg a:hover{
-        border-bottom-color:#0065fc;
-        border-top-color: transparent;
+    
+    #booki-logo{
+        margin-right: auto;
+        padding: 30px 60px;
     }
-}
-
-@media (max-width: 768px) {
-    .acti-heberg{
+    
+    nav a:hover{
+        border-top-color: #0065fc;
+        color: #0065fc;
     }
-}
+    
+    .acti-heberg{ 
+        display: flex;
+    }
+    
+    @media (max-width: 992px) {
+        nav{
+            line-height: 1;
+        }
+        .acti-heberg{
+            flex-basis: 100%;
+        }
+        .acti-heberg a{
+            flex-basis: 50%;
+            text-align: center;
+            border-bottom-color: #F2F2F2;}
+            
+        .acti-heberg a:hover{
+            border-bottom-color:#0065fc;
+            border-top-color: transparent;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .acti-heberg{
+        }
+    }
