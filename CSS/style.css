@@ -70,7 +70,7 @@
     }
     
     input.ville:focus {
-        outline-width: 0;
+        outline-width: 0; 
     }
 
     .barre-recherche input{
@@ -88,20 +88,56 @@
         border-bottom-right-radius: 1.5vw ;
         border: none;
     }
-    
 
     .barre-recherche input::placeholder{
         font-weight: 700;
+    }
+
+    .rechercher:hover{
+        background-color: #0051c9;
     }
 
     .rechercher{
         cursor: pointer;
     }
 
-    /*tablette*/
+    .fa-solid.fa-magnifying-glass{
+        display: none;
+    }
+
+/*liste de filtres*/
+
+.liste-de-filtres i {color:#0065fc;
+    background-color: #DEEBFF;
+    padding: 2vw;
+    border-radius: 50%;
+    margin: -0.30vh 0 -0.30vh -2.2vw;
+}
+
+.liste-de-filtres div{
+    border:3px solid #F2F2F2;
+    border-radius: 3vw;
+    padding: 0 2vw;
+}
+
+.liste-de-filtres{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    gap: 2vw;
+    padding-top: 2vh;
+}
+
+
+.titre-desktop h1
+{display: none;}
+
+/*tablette*/
     
     @media only screen and (max-width: 992px){
-        
+
+    /*barre de navigation et logo*/
+
         #booki-logo-container{
             margin: auto;
             padding: 0;
@@ -131,15 +167,23 @@
             border-bottom-color:#0065fc;   
             border-top-color: transparent;}
 
-        }
+        
+    /*Filtres*/
+    
+        .liste-de-filtres div{
+            mx-width: 30%;
+        }}
 
-        /*mobile*/
+
+/*mobile*/
     
     @media only screen and (max-width: 768px){
 
         nav {
             border : 3px solid red ;
         }
+
+    /*Barre de recherche*/
     
         .barre-recherche i{
             padding: 2vh 3vh;
@@ -154,5 +198,35 @@
             padding: 1vh;
         }
 
+        .texte-rechercher{
+            display: none;
+        }
 
+        .fa-solid.fa-magnifying-glass{
+            display: inline;
+            color: white;
+            background-color: transparent;
+        }
+
+    /* Filtres */
+    
+    .liste-de-filtres div{
+    border:3px solid #F2F2F2;
+    border-radius: 4.5vw;
+    padding: 0 2vw;
+    }
+
+    .liste-de-filtres i{
+        margin: -0.4vh 0 -0.4vh -2.8vw;
+        max-width: 100%;}
+
+    /*saut de ligne titre filtres */
+    
+    .liste-de-filtres h1 {
+    display: none;}
+
+    .titre-desktop h1 {
+    display: inline;
+    }
+    
     }
