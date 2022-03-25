@@ -14,8 +14,7 @@
         align-items: center;
         justify-content: flex-end;
         flex-wrap: wrap;
-        padding: 0;
-        
+        margin: 0;
     }
     
     nav div a {
@@ -23,12 +22,13 @@
         font-weight: 500;
         border-bottom: 3px solid transparent;
         border-top: 3px solid transparent;
+        flex-basis: 100%;
     }
     
     #booki-logo-container{
         margin-top: -48px;
         margin-right: auto;
-        padding: 8vh 8vw;
+        padding: 0vh 5vw;
     }
 
     #booki-logo{
@@ -44,51 +44,61 @@
         display: flex;
     }
 
+
     /* Corps de page */
-    main {
-        borer: 3px red solid;
-
-    }
-    .wrapper {
-        borer: 3px red solid;
-        padding : 0 3vw;
-    }
-
-    .recherche {
-        display: flex;
-    }
-
-    .recherche i{
-        padding: 1vw 3vh;
-        background-color: #F2F2F2;
-        border-top-left-radius: 1.2vw;
-        border-bottom-left-radius: 1.2vw;
-    }
-
     
 
-    .recherche input{
-        padding-right: 8vw;
-        border: 2px solid #F2F2F2;
+    .wrapper {
+        padding : 0 4vw 0 4vw;
     }
 
-    .recherche button{
-        padding: 2vh;
-        background-color: #0065fc;
-        color: white;
-        font-weight: 600;
-        border-top-right-radius: 1.2vw ;
-        border-bottom-right-radius: 1.2vw ;
-        border: none;
+    .barre-recherche {
+        display: flex;
+        flex-shrink: 1;
+    }
+
+    .barre-recherche i{
+        padding: 2vh 3vh;
+        background-color: #F2F2F2;
+        border-top-left-radius: 1.5vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+
+    input.ville {
+        padding-left: 3vw;
+        
     }
     
     input.ville:focus {
         outline-width: 0;
     }
 
-    .recherche input::placeholder{
+    .barre-recherche input{
+        padding-right: 3vw;
+        border: 2px solid #F2F2F2;
+    }
+
+
+    .barre-recherche button{
+        padding: 2vh;
+        background-color: #0065fc;
+        color: white;
+        font-weight: 600;
+        border-top-right-radius: 1.5vw ;
+        border-bottom-right-radius: 1.5vw ;
+        border: none;
+    }
+    
+
+    .barre-recherche input::placeholder{
         font-weight: 700;
     }
+
+    .rechercher{
+        cursor: pointer;
+    }
+
+    /*tablette*/
     
     @media only screen and (max-width: 992px){
         
@@ -122,11 +132,27 @@
             border-top-color: transparent;}
 
         }
+
+        /*mobile*/
     
     @media only screen and (max-width: 768px){
+
         nav {
             border : 3px solid red ;
-
-           
         }
+    
+        .barre-recherche i{
+            padding: 2vh 3vh;
+        }
+    
+    
+        input.ville{
+            width: 90%;
+        }
+    
+        .barre-recherche button{
+            padding: 1vh;
+        }
+
+
     }
