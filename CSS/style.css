@@ -18,17 +18,21 @@
     }
     
     nav div a {
-        padding: 10.4vh 9vw 15.5vh 4vw;
+        display: flex;
+        padding: 8.4vh 3vw 0vh 4vw;
+        margin-top: -5.47vh;
         font-weight: 500;
         border-bottom: 3px solid transparent;
         border-top: 3px solid transparent;
         flex-basis: 100%;
+        align-items: center;
+        gap: 5vw;
     }
     
     #booki-logo-container{
-        margin-top: -48px;
         margin-right: auto;
-        padding: 0vh 5vw;
+        padding-left: 5vw;
+        padding-top: 4vh;
     }
 
     #booki-logo{
@@ -42,10 +46,13 @@
     
     .acti-heberg{ 
         display: flex;
+        padding-right: 4vw;
+        align-items: center;
     }
 
 
-    /* Corps de page */
+
+/* Corps de page */
     
 
     .wrapper {
@@ -54,7 +61,7 @@
 
     .barre-recherche {
         display: flex;
-        flex-shrink: 1;
+        max-width: 400px;
     }
 
     .barre-recherche i{
@@ -105,35 +112,233 @@
         display: none;
     }
 
+
+
 /*liste de filtres*/
 
-.liste-de-filtres i {color:#0065fc;
-    background-color: #DEEBFF;
-    padding: 2vw;
-    border-radius: 50%;
-    margin: -0.30vh 0 -0.30vh -2.2vw;
-}
-
-.liste-de-filtres div{
-    border:3px solid #F2F2F2;
-    border-radius: 3vw;
-    padding: 0 2vw;
-}
 
 .liste-de-filtres{
     display: flex;
     flex-wrap:wrap;
     align-items: center;
-    gap: 2vw;
-    padding-top: 2vh;
+    gap: 1vh 3vw;
+}
+
+.filtre i {color:#0065fc;
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Marges des symboles bleus par rapport aux divs parents encadrées en gris */
+    margin: -0.33vh 1vw -0.33vh -2.2vw;}
+
+.liste-de-filtres div{
+    border:3px solid #F2F2F2;
+    border-radius: 80vw;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.liste-de-filtres div:hover{
+    cursor: pointer;
+    color: #0065fc;
+}
+
+.titre-desktop h2{
+    display: none;
+}
+
+/*Résultats de recherche*/
+
+.nombre-résultats{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vh;
+}
+
+.nombre-résultats .fa-solid.fa-info{
+    width: 22px;
+    height: 22px;
+    color:#0065fc;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Hébergements et populaires */
+
+.liste-dhébergements{
+    display: flex;
+    gap: 1vw;
+    flex-basis: 100%;;
+}
+
+.normal{
+    flex-basis: 66%;
+}
+
+.populaire{
+    flex-basis: 33%;
+}
+
+.liste-dhébergements > div{
+    borer: 1px solid red;
+    background-color: #F2F2F2;
+    border-radius : 3.5vw;
+    padding: 2vw;
+    
+}
+
+.normal a {
+    font-weight: bold;
+    text-align: center;
 }
 
 
-.titre-desktop h1
-{display: none;}
+.détails-hébergements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+    gap: 3vw;
+    margin-bottom: 2vh;
 
-/*tablette*/
+}
+
+.détails-hébergements div{
+    boder: 1px solid red;
+    flex-basis: calc(33% - 60px);
+}
+
+
+.détails-populaires{
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+    boder: 1px solid blue;
+}
+
+.liste-dhébergements .populaire .détails-populaires div{
+    flex-basis: 100%;
+    boder: 1px solid red;
+}
+
+
+
+.moyenne-des-avis .fa-solid.fa-star.étoiles-en-bleu{
+    color:#0065fc;
+}
+
+.étoiles-en-gris{
+    color: #c7c7c7;
+}
+
+.détails-hébergements p {
+    margin: 0.5vw;
+}
+.détails-populaires p {
+    margin: 0.5vw;
+}
+
+
+.détails-hébergements img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+}
+.détails-populaires img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.case-résultat-populaire{
+    display: flex;
+    background-color: white;
+    flex-wrap: nowrap;
+    border-radius: 20px;
+    flex-grow: 1;
+    width: 100%;
+    flex-direction: row;
+    box-shadow: 0 0 15px #c7c7c7;
+}
+
+.description-populaire{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    align-iems:baseline;
+    justify-content:flex-start;
     
+}
+
+.case-résultat{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1vw;
+    flex-grow: 1;
+    box-shadow: 0 0 15px #c7c7c7;
+}
+
+.case-résultat:hover{
+    transform: scale(1.02);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;  
+}
+
+.case-résultat-populaire:hover{
+    transform: scale(1.02);
+    transition: all 200ms ease-in-out;
+    cursor: pointer;  
+}
+
+/* Activités */
+
+.liste-dactivités-grid{
+background-color: red;
+display: grid;
+grid-template-rows: 1fr 2fr 1fr;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.liste-dactivités-grid > *{
+    border: 1px solid blue;
+}
+
+.big-1, .big-2{
+    grid-row: 1 / 4
+}
+
+.big-2{
+    grid-column: 3 / 4;
+}
+
+.medium-1, .medium-2 {
+    grid-row: span 2;
+}
+
+.small-1{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/*TABLETTE*/
+    
+
+
+
     @media only screen and (max-width: 992px){
 
     /*barre de navigation et logo*/
@@ -147,40 +352,85 @@
             padding-left: 66px; }
 
         nav div a {
-            padding-top: 5vh;
-            padding-bottom: 3vh;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
             font-weight: 500;
-            border-bottom: 3px solid transparent;
-            border-top: 3px solid transparent;
-        }
-     
-        .acti-heberg{
-            flex-basis: 100%;    
-
-        }
-        .acti-heberg a{
+            margin: 0;
             flex-basis: 50%;
             text-align: center;
+
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid transparent;
             border-bottom-color: #F2F2F2;
         }
+     
+        .texte-barre-nav{
+        justify-content: center;
+        }
+
+        .acti-heberg{
+            flex-basis: 100%;    
+            padding: 0;
+        }
+
         .acti-heberg a:hover{
             border-bottom-color:#0065fc;   
             border-top-color: transparent;}
 
-        
-    /*Filtres*/
-    
+
+    /*Recherche*/
+
+        /* Saut de ligne après h1 Filtres*/
         .liste-de-filtres div{
-            mx-width: 30%;
-        }}
+            margin-top: 2vh;
+        }
+        /* Marges des symboles bleus par rapport aux divs parents encadrées en gris*/
+        .liste-de-filtres i{
+            margin: -0.25vh 1.4vw -0.26vh -2.9vw;
+        }
+        /*Changement h1 pour afficher les filtres en dessous du texte*/
+        .liste-de-filtres h2 {
+            display: none;
+        }
+        .titre-desktop h2 {
+            display: inline;
+        }
 
 
-/*mobile*/
-    
+
+    /* Liste d'hébergements */
+
+.liste-dhébergements{
+    flex-direction: column-reverse;
+}
+
+    /* Un seul hébergement par ligne*/
+.détails-hébergements div{
+    flex-basis: 100%;
+}
+
+.liste-dhébergements.normal{
+    flex-basis: 50%;
+}
+.liste-dhébergements.populaire{
+    flex-basis: 50%;
+}
+.détails-hébergements div{
+    flex-basis: calc(50% - 60px);
+}
+
+}
+
+
+
+/*MOBILE*/
+
+
+
     @media only screen and (max-width: 768px){
 
         nav {
-            border : 3px solid red ;
+            borer : 3px solid red ;
         }
 
     /*Barre de recherche*/
@@ -202,31 +452,42 @@
             display: none;
         }
 
+    /*Affichage symbole rechercher en vue mobile*/
         .fa-solid.fa-magnifying-glass{
             display: inline;
             color: white;
             background-color: transparent;
         }
+        
 
     /* Filtres */
-    
-    .liste-de-filtres div{
-    border:3px solid #F2F2F2;
-    border-radius: 4.5vw;
-    padding: 0 2vw;
-    }
 
-    .liste-de-filtres i{
-        margin: -0.4vh 0 -0.4vh -2.8vw;
-        max-width: 100%;}
+    /* Marges des symboles bleus par rapport aux divs parents encadrées en gris*/
+        .liste-de-filtres i{
+        margin: -0.3vh 1.4vw -0.4vh -2.9vw;
+        }
 
-    /*saut de ligne titre filtres */
-    
-    .liste-de-filtres h1 {
-    display: none;}
+    /*Résultats de recherche*/
+        .nombre-résultats{
+        margin-top: 2vh;
+        }
 
-    .titre-desktop h1 {
-    display: inline;
+
+
+    /* Liste d'hébergements */
+
+
+
+    .liste-dhébergements{
+       flex-direction: column-reverse;
+   }
+    /* .populaire{ order: -1} (pas besoin avec column-reverse)*/
+
+
+    /* Un seul hébergement par ligne en vue mobile */
+    .détails-hébergements div{
+    borer: 4px solid yellow;
+    flex-basis: 100%;
     }
-    
-    }
+}
+
