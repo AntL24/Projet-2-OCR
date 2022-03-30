@@ -152,7 +152,7 @@
     color: #0065fc;
 }
 
-.titre-desktop h2{
+.filtres-affichage{
     display: none;
 }
 
@@ -461,7 +461,7 @@ footer{
     .liste-de-filtres h2 {
         display: none;
     }
-    .titre-desktop h2 {
+    .filtres-affichage {
         display: inline;
     }
 
