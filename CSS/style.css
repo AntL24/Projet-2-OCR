@@ -2,15 +2,22 @@
     font-family: "raleway", "sans-serif";
     }
 
-    /* Barre de navigation 
-    body{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20vh;    }*/
+    /* Barre de navigation */
     a{
         color: inherit;
         text-decoration: none;
+        font-weight: normal;
     }
+
+    #anchor, #anchor1, #anchor2, #anchor3, #anchor4, #anchor5, #anchor6, #anchor7, #anchor8{
+    display: contents; 
+    text-decoration: none;
+    font-weight: normal; 
+    text-align: start;}
+
+    .anchor-acti{
+        display: contents;  text-decoration: none;
+    ; text-align: start;}
 
     nav{
         display: flex;
@@ -310,7 +317,7 @@
     padding: 5px;
     flex-grow: 1;
     box-shadow: 0 0 15px #c7c7c7;
-}
+    onclick}
 
 .case-résultat:hover{
     transform: scale(1.02);
@@ -387,7 +394,12 @@
     cursor: pointer;  
 }
 
-
+.myAnchor, .myAnchor, .myAnchor:hover, .myAnchor:visited, .myAnchor:focus, .myAnchor:active {
+    text-decoration: inherit;
+    color: inherit;
+    outline: 0;
+    cursor: auto;
+  }
 
 
 /* Pied-de-page */
