@@ -17,7 +17,7 @@
 
     .anchor-acti{
         display: contents;  text-decoration: none;
-    ; text-align: start;}
+    ; text-align: start; font-weight: bold;}
 
     nav{
         display: flex;
