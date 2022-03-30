@@ -6,7 +6,7 @@
     a{
         color: inherit;
         text-decoration: none;
-        font-weight: normal;
+        ;
     }
 
     #anchor, #anchor1, #anchor2, #anchor3, #anchor4, #anchor5, #anchor6, #anchor7, #anchor8{
@@ -17,7 +17,7 @@
 
     .anchor-acti{
         display: contents;  text-decoration: none;
-    ; text-align: start; font-weight: bold;}
+    ; text-align: start;}
 
     nav{
         display: flex;
