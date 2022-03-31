@@ -176,8 +176,9 @@ input.ville:focus {
 	flex-basis: 33%;
 	background-color: #F2F2F2;
 }
-/*Placement du H1 "Les plus populaires" et du <i> graph*/
 
+
+/*Placement du H1 "Les plus populaires" et du <i> graph*/
 .populaire h1 {
 	display: flex;
 	justify-content: space-around;
@@ -189,6 +190,8 @@ input.ville:focus {
 	border-radius: 3.5vw;
 	padding: 2vw;
 }
+
+
 .normal a {
 	font-weight: bold;
 	text-align: center;
@@ -407,7 +410,7 @@ footer {
 	.détails-hébergements div {
 		flex-basis: calc(50% - 60px);
 	}
-	/*LISTE D'ACTIVITES*/
+	/*GRID/FLEX LISTE D'ACTIVITES*/
 	.liste-dactivités-grid {
 		display: grid;
 		grid-template-columns: initial;
